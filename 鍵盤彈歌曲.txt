@@ -1,0 +1,41 @@
+ #include <Keypad.h>
+int a[]={247,277,294,330,370,392,440,494,554,587,659,740,784,880,988,1109};
+const byte ROWS = 4; // 4 Rows
+const byte COLS = 4; // 4 Columns
+char keys[ROWS][COLS] = {
+{'F', 'E', 'D', 'C'}, {'B','3','6', '9'},
+{'A', '2', '5', '8'}, {'0', '1', '4', '7'}
+};
+byte rowPins[ROWS] = {13, 12, 11, 10}; 
+byte colPins[COLS] = {17, 16, 15, 14};
+Keypad keypad =Keypad( makeKeymap(keys), rowPins,colPins, ROWS, COLS );
+
+void setup() 
+{
+Serial.begin(9600); 
+pinMode(5,OUTPUT);
+}
+
+void loop() 
+{
+  int i;
+  
+   
+      char key = keypad.getKey();
+  if (key != NO_KEY)
+  {
+    if(key>='A'  &&  key<='F')
+      {
+         i=key-'A'+10;
+         tone(5,a[i],300);
+         Serial.println(i);
+      }
+      else
+      {
+        i=key-'0'+0;
+        tone(5,a[i],300);
+        Serial.println(i);
+      }
+  }
+
+}

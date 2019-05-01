@@ -1,0 +1,533 @@
+#define beat 438
+#define pin 8
+#define eight 0.5
+#define sixteenth 0.25
+
+#define Do0 147
+#define Re0 165
+#define Mi0 185
+#define Fa0 196
+#define So0 220
+#define La0 247
+#define Si0 277
+
+#define Do1 294
+#define Re1 330
+#define Mi1 370
+#define Fa1 392
+#define So1 440
+#define La1 494
+#define Si1 554
+
+#define Do2 587
+#define Re2 659
+#define Mi2 740
+#define Fa2 784
+#define So2 880
+#define La2 988
+#define Si2 1109
+
+void setup()
+{
+  pinMode(pin,OUTPUT);
+
+}
+
+void loop() 
+{
+  delay(beat*3);//0 0 0
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Re1,beat);//2
+  ttone(pin,Si0,beat*eight);//7.
+  ttone(pin,Si0,beat*eight);//7.
+  ttone(pin,Do1,beat);//1
+  ttone(pin,Si0,beat*eight);//7.
+  ttone(pin,La0,beat*eight);//6.
+  ttone(pin,Si0,beat*eight);//7.
+  ttone(pin,So0,beat*eight);//5.
+  delay(beat*eight);//0
+  ttone(pin,So0,beat*eight);//5.  第1尾
+  
+  ttone(pin,La0,beat);//6.
+  ttone(pin,Do1,beat);//1
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2 
+  ttone(pin,Re1,beat*eight*2);//2 2
+  delay(beat*eight);//0
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,Mi1,beat*eight);//3
+  delay(beat);//0
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2 
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,Re1,beat*eight);//2 
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Si1,beat);//7
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,So1,beat*eight);//5   第2尾
+  
+  ttone(pin,La1,beat*eight);//6
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,So1,beat);//5
+  delay(beat*eight);//0
+  ttone(pin,Do1,beat*sixteenth);//1
+  ttone(pin,Re1,beat*sixteenth);//2
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,Do1,beat*sixteenth);//1
+  delay(beat*eight);//0
+  ttone(pin,Do1,beat*sixteenth);//1
+  ttone(pin,Do1,beat*sixteenth);//1
+  ttone(pin,Re1,beat*eight);//2 
+  ttone(pin,Si0,beat*eight);//7.
+  ttone(pin,So0,beat*eight);//5.
+  ttone(pin,Si0,beat*eight);//7.
+  ttone(pin,Si0,beat);//7.
+  ttone(pin,Si0,beat*eight);//7.
+  ttone(pin,La0,beat*eight+beat);//6. 6.
+  delay(beat*eight);//0
+  ttone(pin,Re1,beat*eight);//2   第3尾
+  
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,Re1,beat*eight);//2 
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Re1,beat);//2 
+  ttone(pin,Si0,beat);//7.
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Si0,beat*eight);//7.
+  ttone(pin,La0,beat*eight);//6.
+  ttone(pin,Si0,beat*1.5);//7.-
+  ttone(pin,So0,beat*eight);//5.
+  ttone(pin,La0,beat);//6.
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2 
+  ttone(pin,Do1,beat*sixteenth);//1
+  ttone(pin,Do1,beat*sixteenth);//1
+  ttone(pin,Re1,beat*eight);//2 
+  ttone(pin,Re1,beat*eight);//2    第4尾
+  
+  ttone(pin,Re1,beat*eight);//2 
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2 
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight*1.5);//3-
+  delay(beat*sixteenth);//0
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2 
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,Re1,beat*eight);//2 
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Si1,beat);//7
+  ttone(pin,Do2,beat*eight);//.1
+  ttone(pin,Si1,beat*eight);//7
+  ttone(pin,La1,beat*eight);//6
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,So1,beat);//5
+  delay(beat*eight);//0
+  ttone(pin,Do1,beat*sixteenth);//1
+  ttone(pin,Re1,beat*sixteenth);//2  第5尾
+  
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Si0,beat*eight);//7. 
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Si0,beat*eight);//7. 
+  ttone(pin,So0,beat*eight);//5.
+  ttone(pin,Si0,beat*eight);//7. 
+  ttone(pin,Si0,beat*sixteenth);//7.
+  ttone(pin,Si0,beat);//7.
+  ttone(pin,La0,beat*eight+beat);//6. 6.
+  delay(beat*eight);
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Fa1,beat*eight);//4
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,Re1,beat*eight);//2      第6尾
+  
+  ttone(pin,Re1,beat);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Si0,beat*sixteenth);//7. 
+  ttone(pin,Do1,beat*sixteenth);//1
+  ttone(pin,Do1,beat*eight);//1
+  delay(beat*eight);//0
+  ttone(pin,So0,beat*eight);//5.
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat);//2
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Mi1,beat);//3  
+  delay(beat*eight);//0
+  ttone(pin,Do1,beat*eight);//1     第7尾
+  
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,So1,beat*sixteenth);//5
+  ttone(pin,So1,beat*sixteenth+beat*eight);//5 5
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Do2,beat*sixteenth);//.1
+  ttone(pin,Si1,beat*eight);//7
+  ttone(pin,La1,beat*sixteenth+beat*eight);//6 6
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,La1,beat*eight);//6
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,Re1,beat*eight);//2     ???????????
+  ttone(pin,Mi1,beat);//3
+  delay(beat*eight);
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight*2);//2 2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight+beat*2);//3 第8尾  3
+
+  delay(beat);//0
+  ttone(pin,Mi1,beat*eight);//3   ???????????
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Si1,beat*eight);//7   ???????????
+  ttone(pin,Do2,beat*eight);//.1
+  ttone(pin,Si1,beat*eight);//7   ???????????
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight);//3   ???????????
+  delay(beat*eight);//0
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat);//3
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1        第9尾
+  
+  ttone(pin,Do1,beat*eight);//1
+  delay(beat*eight);//0
+  ttone(pin,La0,beat*eight);//6.
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Fa1,beat*eight);//4
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight);//3
+  delay(beat*eight);//0
+  ttone(pin,Mi1,beat*eight);//3   ???????????
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Si1,beat*eight);//7   ???????????
+  ttone(pin,Do2,beat*eight);//.1
+  ttone(pin,Si1,beat*eight);//7   ???????????
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight);//3
+  delay(beat*eight);//0
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1        第10尾
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1 
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat);//3
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Do1,beat*eight);//1
+  delay(beat*eight);//0
+  ttone(pin,La1,beat);//6
+  ttone(pin,So1,beat);//5
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Si1,beat*eight);//7 
+  ttone(pin,Si1,beat*eight);//7 
+  ttone(pin,Si1,beat*eight);//7 
+  ttone(pin,Do2,beat*eight);//.1
+  ttone(pin,Re2,beat*eight);//.2
+  ttone(pin,Si1,beat*eight);//7 
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Si1,beat*eight);//7        第11尾
+
+  ttone(pin,Si1,beat*3+beat*eight);//7 - - 7 
+  ttone(pin,La1,beat*eight);//6
+  ttone(pin,La1,beat*4);//6
+  delay(beat*7);//0 0 0 0 0 0 0 
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2        第12尾
+
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Si0,beat*eight*2);//7. 7. 
+  delay(beat*eight);//0
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Si0,beat*eight);//7.
+  ttone(pin,La0,beat*eight);//6.
+  ttone(pin,Si0,beat);//7.
+  delay(beat*eight);//0
+  ttone(pin,So0,beat*eight);//5.
+  ttone(pin,La0,beat);//6.
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight+beat*sixteenth);//2 2
+  ttone(pin,Re1,beat*sixteenth);//2    第13尾
+
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight);//3
+  delay(beat*eight);//0
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Si1,beat);//7
+  ttone(pin,Do2,beat*eight);//.1
+  ttone(pin,Si1,beat*eight);//7
+  ttone(pin,La1,beat*eight);//6
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,So1,beat*eight);//5
+  delay(beat*eight);//0
+  delay(beat*eight);//0
+  ttone(pin,Do1,beat*sixteenth);//1
+  ttone(pin,Re1,beat*sixteenth);//2   第2頁 第1尾
+
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Si0,beat*eight);//7.
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Si0,beat*eight);//7.
+  ttone(pin,So0,beat*eight);//5.
+  ttone(pin,Si0,beat*eight);//7.
+  ttone(pin,Si0,beat*1.5);//7.-
+  ttone(pin,La0,beat*eight);//6.
+  ttone(pin,La0,beat);//6.
+  delay(beat*eight);//0
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,So1,beat*sixteenth);//5
+  ttone(pin,So1,beat*sixteenth);//5
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Fa1,beat*eight);//4
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,Re1,beat*eight);//2       第2頁 第2尾
+  
+  ttone(pin,Re1,beat);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Si0,beat*sixteenth);//7.
+  ttone(pin,Do1,beat*sixteenth);//1
+  ttone(pin,Do1,beat);//1
+  delay(beat*eight);//0
+  ttone(pin,So0,beat*eight);//5.
+  ttone(pin,Re1,beat*eight);//2 
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2 
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat);//2
+  ttone(pin,Re1,beat*eight);//2 
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat);//2
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Re1,beat*eight);//2 
+  ttone(pin,Mi1,beat);//3
+  delay(beat*eight);//0
+  ttone(pin,Do1,beat*eight);//1        第2頁 第3尾
+
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,So1,beat*sixteenth);//5
+  ttone(pin,So1,beat*sixteenth);//5
+  delay(beat*sixteenth);//0
+  ttone(pin,So1,beat*sixteenth);//5
+  ttone(pin,So1,beat*sixteenth);//5
+  ttone(pin,So1,beat*sixteenth);//5
+  ttone(pin,Do2,beat*sixteenth);//.1 
+  ttone(pin,Si1,beat*sixteenth);//7
+  delay(beat*sixteenth);//0
+  ttone(pin,La1,beat*sixteenth+beat*eight);//6 6
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,La0,beat*eight*1.5);//6.-
+  ttone(pin,Si1,beat*sixteenth+beat*eight);//7 7
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Mi1,beat);//3
+  delay(beat*eight);//0
+  ttone(pin,Do1,beat*eight);//1  
+  ttone(pin,Re1,beat*eight*1.5);//2-
+  ttone(pin,Do1,beat*sixteenth);//1  
+  ttone(pin,Do1,beat*eight);//1  
+  ttone(pin,Re1,beat*eight*2);//2 2
+  ttone(pin,Do1,beat*eight);//1  
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight+beat*2);//3 第2頁 第4尾 3
+  
+  delay(beat);//0
+  ttone(pin,Mi1,beat*eight);//3   ???????????
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Si1,beat*eight);//7 ???????????
+  ttone(pin,Do2,beat*eight);//.1
+  ttone(pin,Si1,beat*eight);//7 ???????????
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight);//3 
+  delay(beat*eight);//0             //中斷
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1  
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1  
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat);//3
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1        第2頁 第5尾
+  
+  ttone(pin,Do1,beat*eight);//1 
+  delay(beat*eight);//0  
+  ttone(pin,La0,beat*eight);//6.       
+  ttone(pin,Do1,beat*eight);//1 
+  ttone(pin,Fa1,beat*eight);//4
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight);//3   //中斷2  
+  delay(beat*eight);//0  
+  ttone(pin,Mi1,beat*eight);//3 ???????????
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Si1,beat*eight);//7 ???????????
+  ttone(pin,Do2,beat*eight);//.1
+  ttone(pin,Si1,beat*eight);//7 ???????????
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight);//3
+  delay(beat*eight);//0  
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1       第2頁 第6尾
+
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat);//3                      
+  ttone(pin,Re1,beat*eight);//2
+  ttone(pin,Do1,beat*eight);//1
+  ttone(pin,Do1,beat*eight);//1
+  delay(beat*eight);//0 
+  ttone(pin,La0,beat*eight);//6
+  ttone(pin,So1,beat*eight+beat);//5 5
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Si1,beat*eight);//7 
+  ttone(pin,Si1,beat*eight);//7 
+  ttone(pin,Si1,beat*eight);//7 
+  ttone(pin,Do2,beat*eight);//.1
+  ttone(pin,Re2,beat*eight);//.2
+  ttone(pin,Si1,beat*eight);//7 
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Si1,beat*eight);//7       第2頁 第7尾
+  
+  ttone(pin,Si1,beat*eight+beat*3+beat*eight);//7 - - 7
+  ttone(pin,La0,beat*eight);//6
+  ttone(pin,Do2,beat+beat+beat*eight);//.1 - .1   ?????
+  delay(beat*eight);//0 
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,La1,beat*eight);//6
+  ttone(pin,La1,beat*eight);//6
+  ttone(pin,La1,beat);//6
+  ttone(pin,La1,beat*eight);//6
+  ttone(pin,La1,beat*eight);//6
+  ttone(pin,Si1,beat*eight);//7 
+  ttone(pin,Do2,beat*eight);//.1      第2頁 第8尾
+
+  ttone(pin,Si1,beat*eight);//7 
+  ttone(pin,La1,beat*eight);//6
+  ttone(pin,So1,beat*eight);//5   ???????????
+  ttone(pin,Mi1,beat*eight);//3
+  delay(beat*eight);//0 
+  ttone(pin,So1,beat*eight);//5
+  delay(beat*eight);//0 
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,So1,beat*sixteenth);//5
+  ttone(pin,So1,beat*sixteenth+beat*eight);//5-5
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Si1,beat*eight);//7 
+  ttone(pin,Re2,beat*eight+beat*eight);//.2-2
+  ttone(pin,Do2,beat);//.1 
+  ttone(pin,Si1,beat*eight);//7 
+  delay(beat*eight);//0 
+  ttone(pin,Do2,beat*eight);//.1 
+  delay(beat*eight);//0 
+  ttone(pin,So1,beat*eight);//5         第2頁 第9尾
+
+  ttone(pin,La1,beat);//6
+  ttone(pin,Do2,beat*eight);//.1 
+  ttone(pin,Si1,beat);//7
+  ttone(pin,La1,beat*eight);//6
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,Mi1,beat*eight);//3
+  ttone(pin,So1,beat*eight);//5
+  ttone(pin,La1,beat*eight);//6
+  delay(beat*eight);//0 
+  ttone(pin,La1,beat*eight);//6
+  ttone(pin,Si1,beat*eight);//7 
+  ttone(pin,Do2,beat*eight);//.1
+  ttone(pin,Si1,beat+beat);//7
+  delay(beat);//0 
+  ttone(pin,Mi2,beat);//.3        第2頁 第10尾
+
+  ttone(pin,So1,beat);//5
+  ttone(pin,Si1,beat*eight);//7
+  ttone(pin,Re2,beat);//.2
+  ttone(pin,Do2,beat*eight);//.1
+  ttone(pin,Si1,beat*eight);//7
+  ttone(pin,Do2,beat*eight+beat*7);//.1-.1 - - -.1
+  
+}
+void ttone(int a,int b,int c)
+{
+  tone(a,b,c);
+  delay(c);
+  noTone(a);
+}
